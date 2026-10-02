@@ -1,106 +1,320 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VINACARE ASSET - Bảo tồn giá trị tài sản trong tố tụng</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root { 
-            --primary-color: #003366; 
-            --accent-color: #cda45e;  
-            --text-dark: #2c3e50;
-            --bg-light: #f8f9fa;
-        }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; line-height: 1.6; color: var(--text-dark); scroll-behavior: smooth; }
-        nav { background: #fff; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000; }
-        .logo { font-weight: bold; font-size: 22px; color: var(--primary-color); text-decoration: none; display: flex; align-items: center; }
-        .logo i { margin-right: 10px; color: var(--accent-color); }
-        .nav-links a { margin-left: 25px; text-decoration: none; color: var(--text-dark); font-weight: 500; }
-        .btn-admin { background: var(--primary-color); color: #fff !important; padding: 8px 18px; border-radius: 5px; }
-
-        .hero { 
-            background: linear-gradient(rgba(0,51,102,0.85), rgba(0,51,102,0.85)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); 
-            height: 75vh; background-size: cover; background-position: center; color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; 
-        }
-        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
-        .hero p { font-size: 1.3rem; color: var(--accent-color); font-weight: bold; }
-
-        section { padding: 80px 10%; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .card { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 4px solid var(--accent-color); }
-        .card i { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px; }
-
-        .legal-box { background: var(--bg-light); border-left: 5px solid var(--primary-color); padding: 20px; margin-top: 20px; }
-        footer { background: #1a1a1a; color: #fff; padding: 40px 10%; text-align: center; }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VINACARE ASSET — Bảo quản tài sản</title>
+  <meta name="description" content="VINACARE ASSET bảo quản tài sản trong tố tụng hình sự, tố tụng dân sự và tài sản thu hồi cho tổ chức tín dụng. Trực tiếp và bằng công nghệ thông minh.">
+  <meta name="theme-color" content="#0e1c2f">
+  <link rel="canonical" href="https://pta-group.github.io/baoquantaisan/">
+  <meta property="og:title" content="VINACARE ASSET — Bảo quản tài sản">
+  <meta property="og:description" content="VINACARE ASSET bảo quản tài sản trong tố tụng hình sự, tố tụng dân sự và tài sản thu hồi cho tổ chức tín dụng. Trực tiếp và bằng công nghệ thông minh.">
+  <meta property="og:image" content="https://pta-group.github.io/baoquantaisan/og.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap">
+  <link rel="stylesheet" href="css/site.css">
+  
 </head>
 <body>
-
-    <nav>
-        <a href="#" class="logo"><i class="fas fa-gavel"></i> VINACARE ASSET</a>
-        <div class="nav-links">
-            <a href="#mission">Sứ mệnh</a>
-            <a href="#services">Dịch vụ</a>
-            <a href="#tech">Công nghệ SOC</a>
-            <a href="quanly.html" class="btn-admin">Cổng Quản Trị</a>
-        </div>
+  <a class="sr-only" href="#content">Bỏ qua điều hướng</a>
+  <header>
+  <div class="site-top">
+    <div class="wrap">
+      <p>PTA Group<span class="tagline"> / VINACARE ASSET</span></p>
+      <p class="tagline">Bảo tồn giá trị tài sản — Thượng tôn pháp luật</p>
+      <p>
+        <a class="admin-link" href="quanly.html">Cổng quản trị</a>
+        <span class="tagline"> · </span>
+        <a class="phone-link" href="tel:+84939168998">0939 168 998</a>
+      </p>
+    </div>
+  </div>
+  <div class="site-bar">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="media/pta-logo.png" alt="Logo PTA Group">
+        <span>
+          <span class="brand-name">VINACARE</span>
+          <span class="brand-sub">ASSET</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Chính">
+            <a href="index.html" class="is-active">Trang chủ</a>
+            <a href="gioi-thieu.html">Giới thiệu</a>
+            <a href="linh-vuc.html">Lĩnh vực</a>
+            <a href="phuong-thuc.html">Phương thức</a>
+            <a href="tin-tuc.html">Tin tức</a>
+            <a href="lien-he.html">Liên hệ</a>
+      </nav>
+      <div class="bar-actions">
+        <a class="btn btn-brass cta-desktop" href="lien-he.html">Tiếp nhận hồ sơ</a>
+        <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Mở menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="wrap" aria-label="Di động">
+            <a href="index.html" class="is-active">Trang chủ</a>
+            <a href="gioi-thieu.html">Giới thiệu</a>
+            <a href="linh-vuc.html">Lĩnh vực</a>
+            <a href="phuong-thuc.html">Phương thức</a>
+            <a href="tin-tuc.html">Tin tức</a>
+            <a href="lien-he.html">Liên hệ</a>
+      <a class="btn btn-brass" href="lien-he.html">Tiếp nhận hồ sơ</a>
     </nav>
+  </div>
+</header>
+  <main id="content">
+  
+<section class="hero-frame">
+  <img class="hero-media" src="media/hero.jpg" alt="Nhà ở có cổng và vườn, ánh chiều — hiện trạng được giữ">
+  <div class="hero-shade"></div>
+  <div class="wrap hero-copy">
+    <p class="eyebrow">PTA Group · Bảo quản tài sản</p>
+    <h1>Bảo tồn giá trị tài sản. Thượng tôn pháp luật.</h1>
+    <p class="lede">Bảo quản tài sản trong các giai đoạn tố tụng hình sự — tang vật, vật chứng và tài sản liên quan — trong tố tụng dân sự, và tài sản thu hồi cho tổ chức tín dụng, ngân hàng. Giữ hiện trạng bằng người trực tiếp và bằng trung tâm giám sát.</p>
+    <div class="hero-actions">
+      <a class="btn btn-brass" href="linh-vuc.html">Lĩnh vực hoạt động</a>
+      <a class="btn btn-ghost" href="lien-he.html">Liên hệ tư vấn</a>
+    </div>
+  </div>
+</section>
 
-    <header class="hero">
-        <h1>VINACARE - ASSET GROUP</h1>
-        <p>BẢO TỒN GIÁ TRỊ TÀI SẢN - THƯỢNG TÔN PHÁP LUẬT</p>
-        <div style="margin-top: 20px;">
-            <span style="background: var(--accent-color); padding: 10px 20px; border-radius: 5px; font-weight: bold;">Hotline 24/7: 1900....</span>
+<section class="stats">
+  <dl class="wrap">
+    <div><dt>02</dt><dd>Lĩnh vực bảo quản</dd></div>
+    <div><dt>05</dt><dd>Nhóm tài sản tiếp nhận</dd></div>
+    <div><dt>24/7</dt><dd>Trung tâm giám sát SOC</dd></div>
+    <div><dt>02</dt><dd>Phương thức trực tiếp và công nghệ</dd></div>
+  </dl>
+</section>
+
+<section id="mission" class="section">
+  <div class="wrap split">
+    <div>
+      <p class="kicker">Về VINACARE ASSET</p>
+      <h2>Tài sản đứng yên không có nghĩa là tài sản còn nguyên.</h2>
+      <div class="stack muted mt-6">
+        <p>Nhà hút ẩm, xe chết ắc quy, máy gỉ hơi muối, vườn mất mùa — khi vụ việc kết thúc, giá trị còn lại không còn như lúc kê biên hay lúc thu hồi.</p>
+        <p>Chúng tôi làm một việc: bảo quản. Giảm chi phí trông giữ cho cơ quan nhà nước, bảo vệ hiện trạng cho chủ sở hữu và cho tổ chức tín dụng. Không định giá để bán, không môi giới.</p>
+      </div>
+      <a class="btn btn-line mt-8" href="gioi-thieu.html">Xem thêm <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+    </div>
+    <figure>
+      <img class="media media-32" src="media/interior.jpg" alt="Phòng khách được phủ vải, căn nhà đang được giữ hiện trạng">
+      <figcaption class="caption">Nhà ở — mô hình cặp đôi quản gia</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="services" class="section ink">
+  <div class="wrap">
+    <p class="eyebrow">Lĩnh vực hoạt động</p>
+    <h2 class="mt-4" style="max-width:40rem">Đúng phạm vi được giao.</h2>
+    <div class="field-grid mt-10">
+      <a class="field-tile" href="linh-vuc.html#to-tung">
+        <img src="media/evidence.jpg" alt="Tủ lưu trữ được niêm phong, ánh sáng tĩnh">
+        <div class="shade"></div>
+        <div class="copy">
+          <p class="eyebrow">Hình sự & dân sự</p>
+          <h3 style="font-size:1.875rem;margin-top:.75rem">Tài sản trong tố tụng</h3>
+          <p class="lede" style="max-width:28rem">Giữ tang vật, vật chứng và tài sản được giao trong suốt quá trình tố tụng — không để hiện trạng trôi đi giữa các giai đoạn.</p>
+          <span class="meta mt-5" style="color:var(--paper);letter-spacing:.08em">Chi tiết <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
         </div>
-    </header>
-
-    <section id="mission">
-        <div style="text-align: center; margin-bottom: 50px;">
-            <h2>Giải pháp tối ưu cho tài sản tố tụng</h2>
-            <p>Chúng tôi giúp giảm chi phí quản lý cho Nhà nước và bảo vệ hiện trạng tài sản cho chủ sở hữu.</p>
+      </a>
+      <a class="field-tile" href="linh-vuc.html#tin-dung">
+        <img src="media/hero.jpg" alt="Nhà ở có cổng và vườn, tài sản cần giữ nguyên hiện trạng">
+        <div class="shade"></div>
+        <div class="copy">
+          <p class="eyebrow">Ngân hàng & tổ chức tín dụng</p>
+          <h3 style="font-size:1.875rem;margin-top:.75rem">Tài sản thu hồi cho tổ chức tín dụng</h3>
+          <p class="lede" style="max-width:28rem">Giữ nhà, xe, máy và công trình đã thu hồi hoặc đang chờ xử lý nợ — để tài sản còn dùng được, còn bán được khi đến lúc xử lý.</p>
+          <span class="meta mt-5" style="color:var(--paper);letter-spacing:.08em">Chi tiết <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
         </div>
-        <div class="grid">
-            <div class="card">
-                <i class="fas fa-balance-scale"></i>
-                <h3>Tuân thủ Pháp lý</h3>
-                <p>Vận hành dựa trên Nghị định 142/2024/NĐ-CP và Nghị định 47/2026/NĐ-CP. Cam kết bồi thường 100% thiệt hại.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-microchip"></i>
-                <h3>Nhật ký số (Digital Logbook)</h3>
-                <p>Mỗi lần bảo trì đều quét mã QR, ghi lại hình ảnh trước/sau và tọa độ GPS của cán bộ thực hiện.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Trung tâm SOC</h3>
-                <p>Giám sát tập trung 24/7. Cán bộ Công an/Tòa án có thể xem trực tiếp tài sản qua App mọi lúc[cite: 1].</p>
-            </div>
-        </div>
-    </section>
+      </a>
+    </div>
+  </div>
+</section>
 
-    <section id="services" style="background: var(--bg-light);">
-        <h2>Lĩnh vực chuyên sâu</h2>
-        <div class="grid">
-            <div>
-                <h4><i class="fas fa-home"></i> Bất động sản & Biệt thự</h4>
-                <p>Mô hình "Cặp đôi quản gia" chuyên nghiệp, giữ "hơi người" cho căn nhà để không bị mất giá.</p>
-            </div>
-            <div>
-                <h4><i class="fas fa-cogs"></i> Máy móc & Nhà xưởng</h4>
-                <p>Vận hành không tải định kỳ, bọc màng co Shrink Wrap chống rỉ sét và hơi muối.</p>
-            </div>
-            <div>
-                <h4><i class="fas fa-seedling"></i> Nông sản & Ruộng vườn</h4>
-                <p>Mô hình "Thu hoạch & Ủy thác" - Đảm bảo hoa lợi lợi tức được nộp ngân sách đúng quy định[cite: 1, 3].</p>
-            </div>
-        </div>
-    </section>
+<section class="section">
+  <div class="wrap">
+    <div class="split-top">
+      <div class="intro">
+        <p class="kicker">Tài sản tiếp nhận</p>
+        <h2>Nhà, vườn, xe, công trình, máy móc.</h2>
+        <p class="muted mt-4">Mỗi nhóm một cách giữ. Không dùng một quy trình cho cả kho và cả vườn.</p>
+      </div>
+      <a class="btn btn-line" href="linh-vuc.html">Xem lĩnh vực</a>
+    </div>
+    <ul class="asset-grid mt-12">
+      <li class="asset-card group">
+        <div class="zoom-wrap"><img class="zoom media media-16" src="media/interior.jpg" alt="Phòng khách được phủ vải lanh, giữ hiện trạng căn nhà"></div>
+        <div class="pad"><h3>Nhà cửa</h3><p class="muted mt-4" style="font-size:.875rem">Cặp đôi quản gia giữ hơi người cho nhà ở, biệt thự, để căn nhà không mốc và không mất giá vì bỏ trống.</p></div>
+      </li>
+      <li class="asset-card group">
+        <div class="zoom-wrap"><img class="zoom media media-16" src="media/orchard.jpg" alt="Vườn cây ăn trái thẳng hàng trong sương sớm"></div>
+        <div class="pad"><h3>Ruộng vườn cây ăn trái</h3><p class="muted mt-4" style="font-size:.875rem">Thu hoạch và ủy thác. Chăm mùa vụ, ghi sản lượng, hoa lợi nộp đúng quy định.</p></div>
+      </li>
+      <li class="asset-card group">
+        <div class="zoom-wrap"><img class="zoom media media-16" src="media/vehicles.jpg" alt="Xe con, xe tải và xe chuyên dùng trong bãi có kiểm soát"></div>
+        <div class="pad"><h3>Xe các loại</h3><p class="muted mt-4" style="font-size:.875rem">Ô tô, xe tải, xe máy và xe chuyên dùng. Bãi kiểm soát, khởi động và bảo dưỡng định kỳ.</p></div>
+      </li>
+      <li class="asset-card group">
+        <div class="zoom-wrap"><img class="zoom media media-16" src="media/construction.jpg" alt="Công trình bê tông đang xây, mặt sân ướt lúc chạng vạng"></div>
+        <div class="pad"><h3>Công trình</h3><p class="muted mt-4" style="font-size:.875rem">Tuần tra hiện trường, khóa cổng, theo dõi kết cấu và hạng mục dở dang.</p></div>
+      </li>
+      <li class="asset-card group">
+        <div class="zoom-wrap"><img class="zoom media media-16" src="media/machinery.jpg" alt="Máy công nghiệp trong xưởng, một số được bọc màng bảo vệ"></div>
+        <div class="pad"><h3>Máy móc công nghiệp</h3><p class="muted mt-4" style="font-size:.875rem">Vận hành không tải định kỳ, bọc màng co chống rỉ và hơi muối.</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
 
-    <footer>
-        <p><b>VINACARE ASSET JSCo.</b> - vinacarepreservation.vn</p>
-        <p>&copy; 2026 - Bảo tồn giá trị tài sản. Tất cả quyền được bảo lưu.</p>
-    </footer>
+<section id="tech" class="section lined card-bg">
+  <div class="wrap">
+    <div class="intro">
+      <p class="kicker">Phương thức bảo quản</p>
+      <h2>Trực tiếp, hoặc từ trung tâm — thường là cả hai.</h2>
+    </div>
+    <div class="method-grid mt-12">
+      <article>
+        <img class="media media-16" src="media/hero.jpg" alt="Căn nhà có cổng sắt và vườn, ánh chiều">
+        <h3 class="mt-5" style="font-size:1.875rem;color:var(--ink)">Bảo quản trực tiếp</h3>
+        <p class="muted mt-4">Người có mặt tại tài sản. Phù hợp nhà ở, vườn, công trình và nơi cần chăm sóc bằng tay.</p>
+        <ul class="stack mt-4" style="font-size:.875rem">
+          <li class="dash">Niêm phong, tuần tra, bảo trì hiện trường.</li>
+          <li class="dash">Biên bản từng lần kiểm, ảnh và người ký.</li>
+          <li class="dash">Cặp đôi quản gia với nhà ở; đội vườn với cây ăn trái; ca trực với công trình.</li>
+        </ul>
+      </article>
+      <article id="soc">
+        <img class="media media-16" src="media/soc.jpg" alt="Phòng giám sát với màn hình camera cổng và kho">
+        <h3 class="mt-5" style="font-size:1.875rem;color:var(--ink)">Gián tiếp bằng công nghệ thông minh</h3>
+        <p class="muted mt-4">Trung tâm SOC xem 24/7. Phù hợp xe, máy móc và danh mục tài sản phân tán.</p>
+        <ul class="stack mt-4" style="font-size:.875rem">
+          <li class="dash">Camera, cảm biến cửa và độ ẩm.</li>
+          <li class="dash">Mã QR tại điểm kiểm: ảnh trước — sau, tọa độ GPS của người thực hiện.</li>
+          <li class="dash">Cơ quan tiến hành tố tụng và tổ chức tín dụng xem trực tiếp trên ứng dụng theo quyền được cấp.</li>
+        </ul>
+      </article>
+    </div>
+    <a class="btn btn-line mt-10" href="phuong-thuc.html">Cách thức vận hành</a>
+  </div>
+</section>
 
+<section class="section">
+  <div class="wrap">
+    <div class="intro"><p class="kicker">Quy trình</p><h2>Năm bước, một hồ sơ.</h2></div>
+    <ol class="step-grid mt-12">
+      <li><p class="num">01</p><h3 class="mt-4" style="font-size:1.25rem;color:var(--ink)">Tiếp nhận</h3><p class="muted mt-4" style="font-size:.875rem">Hồ sơ, quyết định giao giữ hoặc biên bản thu hồi. Khảo sát hiện trạng tại chỗ.</p></li>
+      <li><p class="num">02</p><h3 class="mt-4" style="font-size:1.25rem;color:var(--ink)">Bàn giao</h3><p class="muted mt-4" style="font-size:.875rem">Phương án bảo quản, niêm phong, ảnh gốc, danh mục tài sản chi tiết.</p></li>
+      <li><p class="num">03</p><h3 class="mt-4" style="font-size:1.25rem;color:var(--ink)">Giữ tài sản</h3><p class="muted mt-4" style="font-size:.875rem">Trực tiếp, công nghệ, hoặc cả hai. Không khai thác ngoài phạm vi được giao.</p></li>
+      <li><p class="num">04</p><h3 class="mt-4" style="font-size:1.25rem;color:var(--ink)">Nhật ký số</h3><p class="muted mt-4" style="font-size:.875rem">Mỗi lần bảo trì một dòng: QR, ảnh, GPS, người thực hiện. Báo cáo định kỳ.</p></li>
+      <li><p class="num">05</p><h3 class="mt-4" style="font-size:1.25rem;color:var(--ink)">Kết thúc</h3><p class="muted mt-4" style="font-size:.875rem">Bàn giao lại hoặc xử lý hoa lợi đúng quyết định của cơ quan có thẩm quyền.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section-tight ink">
+  <div class="wrap legal-grid">
+    <div>
+      <p class="eyebrow">Tuân thủ pháp lý</p>
+      <h2 class="mt-4" style="font-size:1.875rem">Làm trong khung nghị định. Chịu thiệt hại nếu lỗi ta.</h2>
+    </div>
+    <p style="font-size:.875rem;color:rgba(246,243,238,.85)">Vận hành theo Nghị định 142/2024/NĐ-CP và Nghị định 47/2026/NĐ-CP. Biên bản bàn giao là gốc. Mọi việc phát sinh ngoài gốc đều cần văn bản của cơ quan hoặc của tổ chức tín dụng.</p>
+    <p style="font-size:.875rem;color:rgba(246,243,238,.85)">Cam kết bồi thường 100% thiệt hại phát sinh do lỗi bảo quản. Nhật ký số là căn cứ — không phải lời kể sau sự cố.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split-top">
+      <div class="intro"><p class="kicker">Tin tức — sự kiện</p><h2>Việc bảo quản, nói cho rõ.</h2></div>
+      <a href="tin-tuc.html" class="meta" style="color:var(--ink)">Xem thêm</a>
+    </div>
+    <ul class="news-grid mt-12">
+      <li>
+            <a class="group news-card" href="tin-tuc/tang-vat-vat-chung.html">
+              <div class="zoom-wrap"><img class="zoom media media-16" src="media/evidence.jpg" alt="Tủ hồ sơ được niêm phong"></div>
+              <p class="meta mt-4">Tố tụng hình sự<span class="sep">/</span><span class="muted">12.09.2026</span></p>
+              <h3>Giữ tang vật, vật chứng qua từng giai đoạn tố tụng hình sự</h3>
+              <p class="muted mt-4" style="font-size:.875rem">Niêm phong chỉ là mốc đầu. Tài sản còn phải sống được đến khi vụ án kết thúc — không mốc, không mất phụ tùng, không bị mở ngoài biên bản.</p>
+            </a>
+          </li><li>
+            <a class="group news-card" href="tin-tuc/tai-san-to-tung-dan-su.html">
+              <div class="zoom-wrap"><img class="zoom media media-16" src="media/interior.jpg" alt="Nội thất nhà được phủ kín, chờ giải quyết tranh chấp"></div>
+              <p class="meta mt-4">Tố tụng dân sự<span class="sep">/</span><span class="muted">28.08.2026</span></p>
+              <h3>Tài sản tranh chấp và tài sản kê biên trong tố tụng dân sự</h3>
+              <p class="muted mt-4" style="font-size:.875rem">Một căn nhà đang kiện không phải là căn nhà bỏ không. Giữ hiện trạng để còn đối chiếu khi định giá và khi thi hành án.</p>
+            </a>
+          </li><li>
+            <a class="group news-card" href="tin-tuc/tai-san-thu-hoi-ngan-hang.html">
+              <div class="zoom-wrap"><img class="zoom media media-16" src="media/vehicles.jpg" alt="Bãi phương tiện thu giữ"></div>
+              <p class="meta mt-4">Tổ chức tín dụng<span class="sep">/</span><span class="muted">04.08.2026</span></p>
+              <h3>Tài sản tổ chức tín dụng thu hồi, trong lúc chờ xử lý nợ</h3>
+              <p class="muted mt-4" style="font-size:.875rem">Nhà, xe, máy đã nhận bàn giao vẫn xuống cấp từng tháng nếu chỉ rào lại. Bảo quản là để tài sản còn bán được.</p>
+            </a>
+          </li>
+    </ul>
+  </div>
+</section>
+
+<section class="card-bg" style="border-top:1px solid var(--line)">
+  <div class="wrap cta-row">
+    <div>
+      <p class="kicker">Tiếp nhận hồ sơ</p>
+      <h2 style="font-size:1.875rem">Có tài sản cần người giữ — gửi hiện trạng.</h2>
+    </div>
+    <a class="btn btn-brass" href="lien-he.html">Liên hệ tư vấn</a>
+  </div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="foot-brand">
+      <div class="brand">
+        <img src="media/pta-logo.png" alt="">
+        <p class="brand-name">VINACARE ASSET</p>
+      </div>
+      <p class="mt-5" style="color:var(--brass-light);max-width:24rem;font-size:.875rem">Bảo tồn giá trị tài sản — Thượng tôn pháp luật</p>
+      <p class="mt-4 muted" style="color:rgba(246,243,238,.8);max-width:28rem;font-size:.875rem">Bảo quản tài sản trong các giai đoạn tố tụng hình sự — tang vật, vật chứng và tài sản liên quan — trong tố tụng dân sự, và tài sản thu hồi cho tổ chức tín dụng, ngân hàng.</p>
+    </div>
+    <div class="foot-nav-col">
+      <p class="foot-label">Điều hướng</p>
+      <div class="foot-nav">
+            <a href="index.html">Trang chủ</a>
+            <a href="gioi-thieu.html">Giới thiệu</a>
+            <a href="linh-vuc.html">Lĩnh vực</a>
+            <a href="phuong-thuc.html">Phương thức</a>
+            <a href="tin-tuc.html">Tin tức</a>
+            <a href="lien-he.html">Liên hệ</a>
+        <a href="quanly.html">Cổng quản trị</a>
+      </div>
+    </div>
+    <div class="foot-contact">
+      <p class="foot-label">Hotline 24/7</p>
+      <a class="hotline" href="tel:+84939168998">0939 168 998</a>
+      <p class="foot-label mt-5">Văn phòng</p>
+      <a class="mt-4" style="display:block;max-width:20rem;font-size:.875rem" href="https://www.google.com/maps/search/?api=1&query=S%E1%BB%91%2017%20X%C3%B4%20Vi%E1%BA%BFt%20Ngh%E1%BB%87%20T%C4%A9nh%2C%20Ninh%20Ki%E1%BB%81u%2C%20C%E1%BA%A7n%20Th%C6%A1">Số 17 Xô Viết Nghệ Tĩnh, Ninh Kiều, Cần Thơ</a>
+      <p class="mt-4" style="font-size:.875rem;color:rgba(246,243,238,.8)">Gọi trực khi cần khảo sát hoặc khi tài sản đang bảo quản có sự cố. Hồ sơ mới cũng gửi được qua biểu mẫu.</p>
+      <a class="btn btn-ghost mt-5" href="lien-he.html">Gửi yêu cầu</a>
+    </div>
+  </div>
+  <div class="legal">
+    <div class="wrap">
+      <p>© 2026 VINACARE ASSET · PTA Group</p>
+      <p>Giới thiệu dịch vụ — không thay thế văn bản của cơ quan tiến hành tố tụng.</p>
+    </div>
+  </div>
+</footer>
+  <script src="js/site.js"></script>
 </body>
 </html>

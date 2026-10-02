@@ -1,6 +1,6 @@
 # VINACARE ASSET — Bảo quản tài sản
 
-Website của **PTA Group / VINACARE ASSET**.
+Website công ty **PTA Group / VINACARE ASSET**.
 
 **Bảo tồn giá trị tài sản — Thượng tôn pháp luật**
 
@@ -8,12 +8,16 @@ Website của **PTA Group / VINACARE ASSET**.
 - Địa chỉ: Số 17 Xô Viết Nghệ Tĩnh, Ninh Kiều, Cần Thơ
 - Trang đang chạy: [pta-group.github.io/baoquantaisan](https://pta-group.github.io/baoquantaisan/)
 
-## Trong kho này
+## Trang trên GitHub Pages
 
-| File / thư mục | Vai trò |
+| Trang | Đường dẫn |
 |---|---|
-| `index.html` | Trang giới thiệu đang chạy trên GitHub Pages |
-| `quanly.html` | Cổng quản trị |
-| `web/` | Mã nguồn website VINACARE ASSET đầy đủ (Trang chủ, Giới thiệu, Lĩnh vực, Phương thức, Tin tức, Liên hệ) + ảnh |
+| Trang chủ | [index.html](index.html) |
+| Giới thiệu | [gioi-thieu.html](gioi-thieu.html) |
+| Lĩnh vực | [linh-vuc.html](linh-vuc.html) |
+| Phương thức / công nghệ SOC | [phuong-thuc.html](phuong-thuc.html) · [#tech](https://pta-group.github.io/baoquantaisan/#tech) |
+| Tin tức | [tin-tuc.html](tin-tuc.html) |
+| Liên hệ / form | [lien-he.html](lien-he.html) |
+| Cổng quản trị | [quanly.html](quanly.html) |
 
-Trang GitHub Pages **giữ nguyên** `index.html` và `quanly.html`. Bản website mới nằm trong `web/` và trong [Releases](https://github.com/PTA-Group/baoquantaisan/releases).
+Mã nguồn React gốc nằm trong thư mục [`web/`](web/).
